@@ -75,11 +75,6 @@ address {
     font-size: 80%;
     margin: 0px;
 }
-body {
-    align: center;
-    padding: 50px 0px 0px 0px;
-    z-index: 0;
-}
 .tab-content {
     border-bottom: 1px solid #dddddd;
     border-left: 1px solid #dddddd;
@@ -96,4 +91,13 @@ body {
     bottom: 0px;
     position: absolute;
     right: 0px;
+}
+
+body{
+    padding:50px 0px 0px 0px;
+    z-index:0;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
 }
