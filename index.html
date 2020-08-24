@@ -137,6 +137,78 @@
             </div>
         </div>
 
+        <div id="reserveModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Reserve a Table</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-2">
+                                    <p>Number of Guests</p>
+                                </div>
+
+                                <div class="col-12 col-sm-10">
+
+                                    <input type="radio" name="guests" value="1">1<span>&emsp;</span>
+                                    <input type="radio" name="guests" value="2">2<span>&emsp;</span>
+                                    <input type="radio" name="guests" value="3">3<span>&emsp;</span>
+                                    <input type="radio" name="guests" value="4">4<span>&emsp;</span>
+                                    <input type="radio" name="guests" value="5">5<span>&emsp;</span>
+                                    <input type="radio" name="guests" value="6">6<span>&emsp;</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-2">
+                                    <label for="options">Section</label>
+                                </div>
+                                <div class="btn-group col-12 col-sm-10" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                        <input type="radio" name="options" id="option2" autocomplete="off">Smoking
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-2">
+                                    <p>Date and Time</p>
+                                </div>
+
+                                <div class="col-12 col-sm-4">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><span class="fa fa-calendar"></span></div>
+                                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-4">
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><span class="fa fa-clock-o"></span></div>
+                                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-12 col-sm-4 col-sm-offset-2">
+                                    <button type="button" id="cancel-btn-reserve" class="btn btn-default" >Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     <div class="row row-content">
         <div class="col-12 col-sm-4 align-self-center">
             <h3>This Month's Promotions</h3>
