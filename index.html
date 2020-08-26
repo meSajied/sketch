@@ -31,17 +31,61 @@
 <div class="collapse navbar-collapse" id="Navbar">
 <ul class="navbar-nav mr-auto">
     <li class="nav-item"><a class="nav-link"
-                href="./index.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                href="./index.html">
+                <span class="fa fa-home fa-lg"></span> Home</a></li>
     <li class="nav-item active"><a class="nav-link"
                href="#"><span class="fa fa-info fa-lg"></span> About</a></li>
     <li class="nav-item"><a class="nav-link"
                 href="#"><span class="fa fa-list fa-lg"></span> Menu</a></li>
     <li class="nav-item"><a class="nav-link"
-                href="#"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                href="#"><span class="fa fa-address-card fa-lg"></span>
+                    Contact</a></li>
 </ul>
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <a id="loginButton"><span class="fa fa-sign-in"></span> Login </a>
+        </li>
+    </ul>
 </div>
 </div>
 </nav>
+
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login </h4>
+                <button type="button" class="close"
+                        data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+
+                <form class="form-signin" role="form">
+
+                    <label class="sr-only" for="inputEmail">Email address</label>
+                    <input type="email" class="form-control"
+                           id="inputEmail" placeholder="Email Address">
+
+                    <label class="sr-only" for="inputPassword">Password</label>
+                    <input type="password" class="form-control"
+                           id="inputPassword" placeholder="Password">
+
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <button type="button" class="btn btn-default btn-sm"
+                            data-dismiss="modal">Cancel</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <header class="jumbotron">
@@ -145,7 +189,7 @@
                    role="button" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </a>
-                
+
             </div>
             <div>
             	<button class="btn btn-danger btn-sm" id="carousel-button">
@@ -344,6 +388,10 @@ window.onload = function(){
             $("#cancel-btn-reserve").click(function(){
                 $("#reserveModal").modal("hide");
 
+            });
+
+            $("#loginButton").click(function(){
+                $("#loginModal").modal('toggle');
             });
 
             $("#carousel-button").click(function(){
